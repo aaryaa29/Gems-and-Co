@@ -21,7 +21,7 @@ This project was built as a **learning project** to understand full-stack web de
 - **Backend:** PHP  
 - **Frontend:** HTML, CSS, JavaScript  
 - **Database:** MySQL  
-- **Server:** Apache (XAMPP / WAMP / LAMP)
+- **Server:** Apache (XAMPP)
 
 ---
 
@@ -40,7 +40,7 @@ This project was built as a **learning project** to understand full-stack web de
 
 ## How to Run Locally
 
-1. Install **XAMPP / WAMP**
+1. Install **XAMPP**
 2. Clone this repository:
    ```bash
    git clone https://github.com/aaryaa29/Gems-and-Co.git
@@ -49,12 +49,6 @@ This project was built as a **learning project** to understand full-stack web de
 5. Start Apache and MySQL
 6. Open in browser: http://localhost/Gems-and-Co
 
-Deployment
-
-The project is deployed using Vercel (PHP-compatible setup).
-
-Live Demo:
-🔗 https://php-project-jet.vercel.app
 
 Limitations
 
