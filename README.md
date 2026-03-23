@@ -24,11 +24,9 @@ This repository contains the front-end implementation for a high-end jewelry bou
 - `assets/`: Directory containing all high-resolution imagery.
 
 ## Setup
-No build steps required. Simply clone the repository and open `index.html` in your favorite modern web browser.
+No build steps required. Simply clone the repository and open `index.html` in your web browser.
 
 ```bash
 git clone https://github.com/aaryaa29/Gems-and-Co.git
 cd Gems-and-Co
 ```
-
-> Designed & Coded for exquisite elegance.
