@@ -2,29 +2,38 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Gems & Co. India | Luxury Jewelry, Gifts & Accessories Since 2024</title>
+    <meta name="description" content="Shop our full collection of minimal luxury jewelry.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header-container">
             <h1 class="logo">THEGEMS&CO.</h1>
-            <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav id="nav-links">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart">Cart</a></li>
                     <li class="profile-dropdown">
                         <a href="javascript:void(0)" class="profile-icon">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         </a>
                         <div class="dropdown-menu">
+                            <a href="#login">Login</a>
+                            <a href="#register">Register</a>
                             <a href="#">Orders</a>
-                            <a href="cart.html">Cart</a>
                             <a href="#">Settings</a>
                             <a href="#" id="logout-btn">Logout</a>
                         </div>
@@ -34,65 +43,257 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-content">
-            <h2>Discover the Beauty of Minimal Jewelry</h2>
-            <a href="shop.html" class="btn hero-btn">Shop Now</a>
-        </div>
-    </section>
+    <main>
+        <!-- Home Section -->
+        <div id="home">
+            <section class="hero">
+                <div class="container hero-content">
+                    <h2>Discover the Beauty of Minimal Jewelry</h2>
+                    <a href="#shop" class="btn hero-btn">Shop Now</a>
+                </div>
+            </section>
 
-    <section class="products">
-        <div class="container">
-            <h2>Our Collection</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <div class="product-image-wrapper">
-                        <img src="assets/gold.jpg" alt="Product 1">
+            <section class="products">
+                <div class="container">
+                    <h2>Our Collection</h2>
+                    <div class="product-grid">
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/gold.jpg" alt="Product 1">
+                            </div>
+                            <h3>Gold Necklace</h3>
+                            <p>Rs 1329/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/silverring.jpg" alt="Product 2">
+                            </div>
+                            <h3>Silver Ring</h3>
+                            <p>Rs 599/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/diamondear.jpg" alt="Product 3">
+                            </div>
+                            <h3>Diamond Earrings</h3>
+                            <p>Rs 2999/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
                     </div>
-                    <h3>Gold Necklace</h3>
-                    <p>Rs 1329/-</p>
-                    <a href="#" class="btn add-to-cart">Add to Cart</a>
                 </div>
-                <div class="product">
-                    <div class="product-image-wrapper">
-                        <img src="assets/silverring.jpg" alt="Product 2">
-                    </div>
-                    <h3>Silver Ring</h3>
-                    <p>Rs 599/-</p>
-                    <a href="#" class="btn add-to-cart">Add to Cart</a>
-                </div>
-                <div class="product">
-                    <div class="product-image-wrapper">
-                        <img src="assets/diamondear.jpg" alt="Product 3">
-                    </div>
-                    <h3>Diamond Earrings</h3>
-                    <p>Rs 2999/-</p>
-                    <a href="#" class="btn add-to-cart">Add to Cart</a>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <div class="container about-container">
-            <div class="about-image fade-up">
-                <img src="assets/bc94166a87c9b8ff02be34fd4ffabc8e.jpg" alt="About The Gems & Co.">
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image fade-up">
+                    <img src="assets/bc94166a87c9b8ff02be34fd4ffabc8e.jpg" alt="About The Gems & Co.">
+                </div>
+                <div class="about-text fade-up">
+                    <h2>Our Story</h2>
+                    <p>Welcome to The Gems & Co., where timeless elegance meets modern minimalism. Founded with a passion for exquisite craftsmanship, we believe that true luxury lies in simplicity.</p>
+                    <p>Every piece in our collection is thoughtfully curated to elevate your everyday style, using the finest materials to ensure enduring beauty. From subtle daily accents to statement pieces, we craft jewelry meant to be loved and worn forever.</p>
+                    <span class="founder-name">The Gems & Co.</span>
+                </div>
             </div>
-            <div class="about-text fade-up">
-                <h2>Our Story</h2>
-                <p>Welcome to The Gems & Co., where timeless elegance meets modern minimalism. Founded with a passion for exquisite craftsmanship, we believe that true luxury lies in simplicity.</p>
-                <p>Every piece in our collection is thoughtfully curated to elevate your everyday style, using the finest materials to ensure enduring beauty. From subtle daily accents to statement pieces, we craft jewelry meant to be loved and worn forever.</p>
-                <span class="founder-name">The Gems & Co.</span>
-            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <div id="shop">
+            <section class="section" style="padding-top: 100px; padding-bottom: 20px; background-color: var(--color-bg);">
+                <div class="container text-center" style="text-align: center;">
+                    <h2 class="section-title" style="margin-bottom: 20px; font-family: var(--font-heading); font-size: 32px; font-weight: 400; letter-spacing: 2px;">The Complete Collection</h2>
+                    <p style="color: #666; max-width: 600px; margin: 0 auto; font-weight: 300;">
+                        Curated pieces designed to elevate your everyday elegance. Explore our luxury collection below.
+                    </p>
+                </div>
+            </section>
+
+            <section class="products" style="padding-top: 20px;">
+                <div class="container">
+                    <div class="product-grid">
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/gold.jpg" alt="Gold Necklace">
+                            </div>
+                            <h3>Gold Necklace</h3>
+                            <p>Rs 1329/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/silverring.jpg" alt="Silver Ring">
+                            </div>
+                            <h3>Silver Ring</h3>
+                            <p>Rs 599/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/diamondear.jpg" alt="Diamond Earrings">
+                            </div>
+                            <h3>Diamond Earrings</h3>
+                            <p>Rs 2999/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/rings.jpg" alt="Stackable Rings">
+                            </div>
+                            <h3>Stackable Rings</h3>
+                            <p>Rs 1499/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/goldneck.jpg" alt="Elegant Gold Chain">
+                            </div>
+                            <h3>Elegant Gold Chain</h3>
+                            <p>Rs 2199/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <img src="assets/silver.jpg" alt="Silver Rings">
+                            </div>
+                            <h3>Silver Rings</h3>
+                            <p>Rs 899/-</p>
+                            <a href="javascript:void(0)" class="btn add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section cart-page-section">
+            <div class="container cart-container fade-up visible">
+                <div class="cart-header">
+                    <h2 class="section-title">Your Curated Selection</h2>
+                    <p class="subtitle">Review the pieces you've selected.</p>
+                </div>
+                
+                <div class="cart-wrapper">
+                    <div id="cart-items-container">
+                        <!-- Cart items populated by cart.js -->
+                    </div>
+                    
+                    <div id="cart-total" class="cart-summary" style="display: none;">
+                        <div class="summary-row">
+                            <span>Estimated Total</span> 
+                            <span id="cart-total-amount">Rs 0</span>
+                        </div>
+                        <div class="cart-actions">
+                            <a href="#shop" class="btn btn-outline">Continue Shopping</a>
+                            <button class="btn btn-checkout" onclick="alert('Proceeding to premium checkout...')">Secure Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-page-section">
+            <div class="container contact-container">
+                <div class="contact-header fade-up visible">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="subtitle">We're here to help you find your perfect piece.</p>
+                </div>
+                
+                <div class="form-wrapper fade-up visible">
+                    <form id="contact-form" class="minimal-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Email Address">
+                            <label for="email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="How can we assist you?"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                        <p class="form-footer-text">We aim to reply within 24 business hours.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login" class="section contact-page-section">
+            <div class="container contact-container">
+                <div class="contact-header fade-up visible">
+                    <h2 class="section-title">Welcome Back</h2>
+                    <p class="subtitle">Enter your credentials to access your curated collection.</p>
+                </div>
+                
+                <div class="form-wrapper fade-up visible">
+                    <form id="login-form" class="minimal-form">
+                        <div class="form-group">
+                            <input type="email" id="login-email" required placeholder="Email Address">
+                            <label for="login-email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" id="login-password" required placeholder="Password">
+                            <label for="login-password">Password</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Sign In</button>
+                        <p class="form-footer-text">Don't have an account? <a href="#register" style="color: var(--color-accent); font-weight: bold; text-decoration: none;">Register here</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="section contact-page-section">
+            <div class="container contact-container">
+                <div class="contact-header fade-up visible">
+                    <h2 class="section-title">Create Account</h2>
+                    <p class="subtitle">Join us to curate your personal luxury jewelry collection.</p>
+                </div>
+                
+                <div class="form-wrapper fade-up visible">
+                    <form id="register-form" class="minimal-form">
+                        <div class="form-group">
+                            <input type="text" id="register-name" required placeholder="Full Name">
+                            <label for="register-name">Full Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="register-email" required placeholder="Email Address">
+                            <label for="register-email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" id="register-password" required placeholder="Password">
+                            <label for="register-password">Password</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Register</button>
+                        <p class="form-footer-text">Already have an account? <a href="#login" style="color: var(--color-accent); font-weight: bold; text-decoration: none;">Login here</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 TG&CO. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="cart.js"></script>
     <script src="main.js"></script>
     <script>
@@ -114,6 +315,24 @@
 
             document.querySelectorAll('.fade-up').forEach(el => {
                 observer.observe(el);
+            });
+            
+            // Mobile menu toggle
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+            const allNavLinks = navLinks.querySelectorAll('a');
+            
+            mobileMenu.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close mobile menu when link clicked
+            allNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
             });
         });
     </script>
