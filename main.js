@@ -153,7 +153,7 @@ function initializeApp() {
                         Accept: "application/json",
                     },
                     body: JSON.stringify({
-                        access_key: "67b19875-684a-4fc5-ba7c-ad85ce281e4a", 
+                        access_key: "4d7e8413-cfd6-4acd-afda-b62ee1ae12f4", 
                         name: name,
                         email: email,
                         message: message,
