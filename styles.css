@@ -34,9 +34,6 @@ header {
     backdrop-filter: blur(10px);
     padding: 25px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,17 +42,22 @@ header {
     transition: all 0.3s ease;
 }
 
+header .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logo {
     font-size: 32px;
     font-weight: 400;
     margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-family: var(--font-heading);
     letter-spacing: 3px;
     color: var(--color-text);
     text-transform: uppercase;
+    text-align: center;
 }
 
 nav {
@@ -65,12 +67,10 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 15px 0 0 0;
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 50px;
-    /* Space below the centered logo */
 }
 
 nav ul li a {
@@ -107,7 +107,7 @@ nav ul li a:hover::after {
 /* Hero Section Styles */
 .hero {
     background-color: var(--color-bg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/landscapemain.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -699,7 +699,9 @@ footer p {
 
 /* Profile Dropdown */
 .profile-dropdown {
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 5px; /* Aligns visually with the logo */
     display: inline-block;
 }
 
