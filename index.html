@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Gems & Co. India | Luxury Jewelry, Gifts & Accessories Since 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">THEGEMS&CO.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Discover the Beauty of Minimal Jewelry</h2>
+            <a href="shop.html" class="btn hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Our Collection</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="gold.jpg" alt="Product 1">
+                    </div>
+                    <h3>Gold Necklace</h3>
+                    <p>Rs 1329/-</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="silverring.jpg" alt="Product 2">
+                    </div>
+                    <h3>Silver Ring</h3>
+                    <p>Rs 599/-</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product">
+                    <div class="product-image-wrapper">
+                        <img src="diamondear.jpg" alt="Product 3">
+                    </div>
+                    <h3>Diamond Earrings</h3>
+                    <p>Rs 2999/-</p>
+                    <a href="#" class="btn add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-image fade-up">
+                <img src="bc94166a87c9b8ff02be34fd4ffabc8e.jpg" alt="About The Gems & Co.">
+            </div>
+            <div class="about-text fade-up">
+                <h2>Our Story</h2>
+                <p>Welcome to The Gems & Co., where timeless elegance meets modern minimalism. Founded with a passion for exquisite craftsmanship, we believe that true luxury lies in simplicity.</p>
+                <p>Every piece in our collection is thoughtfully curated to elevate your everyday style, using the finest materials to ensure enduring beauty. From subtle daily accents to statement pieces, we craft jewelry meant to be loved and worn forever.</p>
+                <span class="founder-name">The Gems & Co.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TG&CO. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    <script>
+        // Intersection Observer for fade-up minimal effects
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
