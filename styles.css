@@ -762,24 +762,24 @@ footer p {
     /* Header & Navigation */
     header {
         padding: 15px 0;
-        position: relative; /* Change from fixed to prevent overlapping content on tiny screens if wrapped */
+        position: fixed; /* Restore fixed header */
     }
     
     .logo {
         position: static;
         transform: none;
-        margin-bottom: 15px;
-        font-size: 26px;
+        margin-bottom: 10px;
+        font-size: 22px;
     }
     
     nav ul {
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 12px;
         margin-top: 0;
     }
     
     nav ul li a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .profile-dropdown {
@@ -787,31 +787,64 @@ footer p {
         top: 15px;
         right: 15px;
     }
+    
+    .dropdown-menu {
+        right: -10px; /* Prevent edge touching */
+        min-width: 140px;
+    }
 
     /* Hero Section */
     .hero {
-        padding: 120px 20px 80px;
-        min-height: 50vh;
+        padding: 140px 20px 60px; /* Compensate for fixed header */
+        min-height: 40vh;
     }
 
     .hero h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     /* Typography & Spacing */
     .section-title {
-        font-size: 28px !important;
+        font-size: 26px !important;
     }
     
     .products {
-        padding: 50px 20px;
+        padding: 40px 15px;
     }
     
     .product-grid {
-        gap: 20px;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    
+    /* Elegant 2-Column Mobile Grid */
+    .product {
+        min-width: 47%;
+        max-width: 48%;
+        flex: 1 1 47%;
     }
     
     .product img {
-        height: 350px;
+        height: 220px;
+    }
+    
+    .product h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .product p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .btn.add-to-cart {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 10px;
+    }
+    
+    .about-section, .cart-page-section, .contact-page-section {
+        padding-top: 140px;
     }
 }
