@@ -756,3 +756,62 @@ footer p {
 .dropdown-menu a::after {
     display: none !important; /* Override navbar underline */
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        padding: 15px 0;
+        position: relative; /* Change from fixed to prevent overlapping content on tiny screens if wrapped */
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 0;
+    }
+    
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .profile-dropdown {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 120px 20px 80px;
+        min-height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    /* Typography & Spacing */
+    .section-title {
+        font-size: 28px !important;
+    }
+    
+    .products {
+        padding: 50px 20px;
+    }
+    
+    .product-grid {
+        gap: 20px;
+    }
+    
+    .product img {
+        height: 350px;
+    }
+}
