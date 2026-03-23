@@ -107,7 +107,7 @@ nav ul li a:hover::after {
 /* Hero Section Styles */
 .hero {
     background-color: var(--color-bg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('landscapemain.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -695,4 +695,62 @@ footer p {
     .cart-actions {
         flex-direction: column-reverse;
     }
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-icon svg {
+    margin-top: -2px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid var(--color-border);
+    z-index: 1001;
+    border-radius: 4px;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.profile-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    color: var(--color-text);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--color-bg);
+}
+
+.dropdown-menu a::after {
+    display: none !important; /* Override navbar underline */
 }
