@@ -153,7 +153,7 @@ function initializeApp() {
                         Accept: "application/json",
                     },
                     body: JSON.stringify({
-                        access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE", 
+                        access_key: "67b19875-684a-4fc5-ba7c-ad85ce281e4a", 
                         name: name,
                         email: email,
                         message: message,
